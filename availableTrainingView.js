@@ -13,8 +13,9 @@ return html;
 
 function makeListOfAvailableTraining(){
 let html = "";
-    for(user of model.users){
-        html += `<div class="userBox">Bruker: ${user.fornavn} </div>`
+    for(training of model.listOfAvailableTrainings){
+        html += `<div class="userBox">Bruker: ${training.createdBy} Dag:${training.date}  Tid:${training.date}
+        Treningstype:${training.trainingtype}  Sted:${training.date}</div>`
 
     }
 

@@ -36,7 +36,7 @@ const model = {
                 fornavn: "Erlend" ,
                 etternavn: "",
                 treningsnivå: "3til5nivåerher", 
-                kjønn: "kvinne",
+                kjønn: "mann",
                 rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
                 
             },
@@ -54,7 +54,7 @@ const model = {
                 fornavn: "Bjørnar" ,
                 etternavn: "",
                 treningsnivå: "3til5nivåerher", 
-                kjønn: "kvinne",
+                kjønn: "mann",
                 rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
                 
             },
@@ -72,7 +72,7 @@ const model = {
                 fornavn: "Terje" ,
                 etternavn: "",
                 treningsnivå: "3til5nivåerher", 
-                kjønn: "kvinne",
+                kjønn: "mann",
                 rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
                 
             },
@@ -90,7 +90,7 @@ const model = {
                 fornavn: "Eskil" ,
                 etternavn: "",
                 treningsnivå: "3til5nivåerher", 
-                kjønn: "kvinne",
+                kjønn: "mann",
                 rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
                 
             },
@@ -108,7 +108,7 @@ const model = {
                 fornavn: "Geir" ,
                 etternavn: "",
                 treningsnivå: "3til5nivåerher", 
-                kjønn: "kvinne",
+                kjønn: "mann",
                 rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
                 
             },
@@ -117,9 +117,15 @@ const model = {
         ],
 
 
-        listOfAvailableTranings:[
+        listOfAvailableTrainings:[
 
-            {createdBy: "Joakim Schrøder", time: "16.11.21", }
+            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+
         ],
 
 
