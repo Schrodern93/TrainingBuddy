@@ -31,6 +31,87 @@ const model = {
                 rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
                 
             },
+            {   
+                id:3,
+                fornavn: "Erlend" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:4,
+                fornavn: "Therese" ,
+                etternavn: "Kjær",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:5,
+                fornavn: "Bjørnar" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:6,
+                fornavn: "Marie" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:7,
+                fornavn: "Terje" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:8,
+                fornavn: "Elin" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:9,
+                fornavn: "Eskil" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:10,
+                fornavn: "Anita" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
+            {   
+                id:11,
+                fornavn: "Geir" ,
+                etternavn: "",
+                treningsnivå: "3til5nivåerher", 
+                kjønn: "kvinne",
+                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                
+            },
 
 
         ],

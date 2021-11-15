@@ -2,7 +2,7 @@
 function availableTrainingView(){
 let html = "";
 
-html =`
+html =`<div>SORTER ETTER: ${makeSelector()}</div>
 ${makeListOfAvailableTraining()}
         `
 
@@ -21,4 +21,16 @@ let html = "";
 
 return html;
 
+}
+
+function makeSelector(){
+let html = "";
+
+html =`<select>
+        <option value="Dag">Dag</option>
+        <option value="Treningssenter">Treningssenter</option>
+        <option value="Person">Person</option>
+       </select>`
+
+return html;
 }
