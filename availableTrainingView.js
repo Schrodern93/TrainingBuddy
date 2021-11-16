@@ -2,7 +2,7 @@
 function availableTrainingView(){
 let html = "";
 
-html =`<div>SORTER ETTER: ${makeSelector()}</div>
+html =`<div class="selector">SORTER ETTER: ${makeSelector()}</div>
 ${makeListOfAvailableTraining()}
         `
 
@@ -14,8 +14,8 @@ return html;
 function makeListOfAvailableTraining(){
 let html = "";
     for(training of model.listOfAvailableTrainings){
-        html += `<div class="userBox">Bruker: ${training.createdBy} Dag:${training.date}  Tid:${training.time}
-        Treningstype:${training.trainingtype}  Sted:${training.place}</div>`
+        html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
+        <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div> <div class="nameplateUserBox">Laget av: ${training.createdBy}</div></div>`
 
     }
 

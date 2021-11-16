@@ -2,12 +2,12 @@ function makeTraining(){
 
     let html = "";
 
-    html =`Start:<input type="time"/>
+    html =`<div class="inputsMakeTraining">Start:<input type="time"/>
            Slutt:<input type="time"/>
            Dato: <input type="date"/>
-    
+    </div>
            
-        <button>Registrer ny trening</button>
+        <button class="makeTrainingButton">REGISTRER NY TIME</button>
     
             `
     
