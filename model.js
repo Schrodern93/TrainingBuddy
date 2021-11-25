@@ -4,9 +4,12 @@ const model = {
 
         inputs:{
             dateAndTime: "",
+            date:"",
 
 
         },
+        filteredValue: "",
+        selectedValueInFilter:"Dag",
         footerNumber: 0,
         footer:[`<div class="footer" onclick="mainView('makeTraining')">LAG NY TIME</div>`,
                 `<div class="footer" onclick="mainView('availableTraining')">TILBAKE TIL FORSIDE</div>`
