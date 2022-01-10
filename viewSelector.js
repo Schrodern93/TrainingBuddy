@@ -11,6 +11,10 @@ function viewSelector(selectedPage){
     { html = makeTraining();
         model.footerNumber = 1
     }
+    if(model.pageSelected == "profilePage"){
+        html = profilePageView();
+        model.footerNumber = 1
+    }
     return html;
 }
 function createMainContent(selectedPage){
@@ -37,6 +41,7 @@ let html ="";
                         <div class="menuline"></div>
                         <div class="menuline"></div>      
                     </div>
+                    <div class="menuButton1"></div>
                 </div>
                 ${footerSelector(model.footerNumber)}
             </div>`;

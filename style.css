@@ -58,7 +58,7 @@ div.maincontent {
 .menu {
   background-color:rgb(17, 17, 10);
   grid-area: menu;
-
+  position: relative;
 }
 
 .headerText{
@@ -67,6 +67,7 @@ div.maincontent {
     align-items: center;
 }
 
+/*------------ menubuttons ---------*/
 .menuContainer{
     padding-top:10%;
     display: flex;
@@ -84,6 +85,19 @@ div.maincontent {
     background-color: aliceblue;
 }
 
+.menuButton1{
+    position: absolute;
+    display: flex;
+    z-index: -10;
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+}
+.menuButton1:checked{
+    bottom: 10vh;
+}
+
+/*---------- mainpage ---------*/
 .userBox{
     width: 100vw;
     height: 8vh;
@@ -101,13 +115,16 @@ div.maincontent {
 .selector{
     padding: 5px;
 }
-
+/*----- make training ------ */
 .inputsMakeTraining{
     width:80vw;
     margin:auto;
-font-size: xx-large;
+font-size: 50px;
 display: flex;
 flex-direction: column;
+}
+.makeTrainingInput{
+height: 30px;
 }
 
 .makeTrainingButton{

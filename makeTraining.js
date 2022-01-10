@@ -2,10 +2,10 @@ function makeTraining(){
 
     let html = "";
 
-    html =`<div class="inputsMakeTraining">Start:<input type="time"/>
-                Slutt:<input type="time"/>
-                Dato: <input oninput="model.inputs.date = this.value" type="date"/>
-                Treningstype: <input type="text"/> 
+    html =`<div class="inputsMakeTraining">Start:<input class="makeTrainingInput" type="time"/>
+                Slutt:<input class="makeTrainingInput" type="time"/>
+                Dato: <input class="makeTrainingInput" oninput="model.inputs.date = this.value" type="date"/>
+                Treningstype: <input class="makeTrainingInput" type="text"/> 
            </div>
            
         <button class="makeTrainingButton" onclick="createTrainingObject()">REGISTRER NY TIME</button>
