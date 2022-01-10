@@ -1,0 +1,50 @@
+.profilePageContainer{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr 10px 5fr 1fr 5fr ;
+ 
+    grid-template-areas:'profilePicture profileInfo'
+                        'activeTraining activeTraining'
+                        'scroll1 scroll1'
+                        'signedUpTraining signedUpTraining'
+                        'scroll1 scroll1';
+}
+/* må fikse grid oppsett slik at det ikke er bugga på profilside
+    må fikse createSignedUpForTraining() slik at den viser treninger man er meldt opp til
+*/
+
+.profilePicture{
+    background-color: aquamarine;
+    grid-area: profilePicture;
+}
+.profilePicture img{
+    width:  40vw;
+    height: auto;
+    padding: 20px;
+}
+
+.profileInfo{
+    padding-top: 20px;
+    text-align: left;
+    background-color: aquamarine;
+    grid-area: profileInfo;
+}
+
+.activeTraining{    
+
+    grid-area: activeTraining;
+}
+
+.signedUpTraining{
+    padding-top:10px;
+   
+    grid-area: signedUpTraining;
+}
+.scroll1{
+    overflow: scroll;
+    grid-area: scroll1;
+}

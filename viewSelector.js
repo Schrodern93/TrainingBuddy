@@ -36,7 +36,7 @@ let html ="";
                 <div class="maincontent">${createMainContent(selectedPage)}</div>
                 
                 <div class="menu">
-                    <div class="menuContainer">
+                    <div class="menuContainer" onclick="mainView('profilePage')">
                         <div class="menuline"></div>
                         <div class="menuline"></div>
                         <div class="menuline"></div>      

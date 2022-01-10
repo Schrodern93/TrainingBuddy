@@ -2,6 +2,8 @@ const model = {
 
         pageSelected:"availableTraining",
 
+        loggedInUser:1,
+
         inputs:{
             dateAndTime: "",
             date:"",
@@ -20,9 +22,12 @@ const model = {
                 id:1,
                 fornavn: "Joakim" ,
                 etternavn: "Schrøder",
+                email: "schrodern93@gmail.com",
                 treningsnivå: "3til5nivåerher", 
                 kjønn: "mann",
-                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                // rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                // rating2:{motivasjon:[], treningsglede:[],  },
+                rating3:[3,3,5,3,4],
                 
             },
             {   
@@ -31,7 +36,7 @@ const model = {
                 etternavn: "Eidsten",
                 treningsnivå: "3til5nivåerher", 
                 kjønn: "kvinne",
-                rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
+                rating:[{motivasjon: 3},{treningsglede: 3},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
                 
             },
             {   
@@ -55,7 +60,7 @@ const model = {
             {   
                 id:5,
                 fornavn: "Bjørnar" ,
-                etternavn: "",
+                etternavn: "Johansen",
                 treningsnivå: "3til5nivåerher", 
                 kjønn: "mann",
                 rating:[{motivasjon: 4},{treningsglede: 4},{inspirasjon:5},{kommunikasjon:3},{tips:4}],
