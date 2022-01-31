@@ -141,11 +141,14 @@ const model = {
             {linkedId:9, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"noeannet", place:"LA-rvik" },
             {linkedId:10, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
             {linkedId:11, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:12, createdBy: "Bjørnar Johansen", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Chess", place:"TBG" },
+            {linkedId:13, createdBy: "Bjørnar Johansen", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"TrainTheBrain", place:"TBG" },
             
         ],
 
         signedUpforTraining:[
-            {personId: 1, trainingId: [7,9]},
+            {personId: 1, trainingId: [7,9,11,12,13]},
+            {personId: 2, trainingId: [1,2,3,4]},
 
 
         ],
