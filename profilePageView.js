@@ -49,18 +49,18 @@ function createActiveTraining(){
     må fikse createSignedUpForTraining() slik at den viser treninger man er meldt opp til
 */
 
-function createSignedUpForTraining(){
-    let html = "";
+// function createSignedUpForTraining(){
+//     let html = "";
 
-    for(training of model.listOfAvailableTrainings){
-         if(training.linkedId == model.loggedInUser){
+//     for(training of model.listOfAvailableTrainings){
+//          if(training.linkedId == model.loggedInUser){
 
-        html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
-        <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div></div>`
-         }
-    };
-    return html;
-}
+//         html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
+//         <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div></div>`
+//          }
+//     };
+//     return html;
+// }
 
 function createListofSignedUpTraining(){
     let html="";
@@ -71,7 +71,7 @@ function createListofSignedUpTraining(){
     for(let i = 0; i<trainingIds.length;i++){
      let training = model.listOfAvailableTrainings.filter(training => training.linkedId == trainingIds[i])
      html +=`<div class="userBox"> Dag:${training[0].date}  Tid:${training[0].time}
-             <div>Treningstype: ${training[0].trainingtype}  Sted: ${training[0].place}</div></div>` 
+             <div>Treningstype: ${training[0].trainingtype}  Sted: ${training[0].place}</div>Laget av: ${training[0].createdBy} </div>` 
     }
    
     return html;
