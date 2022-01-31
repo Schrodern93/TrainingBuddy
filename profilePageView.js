@@ -6,10 +6,10 @@ function profilePageView(){
     html =`<div class="profilePageContainer">
               <div class="profilePicture"><img src="joakim.jpg"/></div>
               <div class="profileInfo">${profileInfo()}</div>
-              <div class="activeTraining"></div>
-              <div class="scroll1">${createActiveTraining()}</div>
-              <div class="signedUpTraining"></div>
-              <div class="scroll1">${createSignedUpForTraining()}</div>
+              <div class="trainingheader">Dine treninger</div>
+              <div class="activeTraining">${createActiveTraining()}</div>  
+              <div class="trainingheader2">Påmeldt</div>       
+              <div class="signedUpTraining">${createListofSignedUpTraining()}</div>
            </div>
     
             `;
@@ -34,7 +34,23 @@ return html;
 }
 
 function createActiveTraining(){
-    let html = "Dine treninger";
+    let html = "";
+
+    for(training of model.listOfAvailableTrainings){
+         if(training.linkedId == model.loggedInUser){
+
+        html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
+        <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div></div>`
+         }
+    };
+    return html;
+}
+/* 
+    må fikse createSignedUpForTraining() slik at den viser treninger man er meldt opp til
+*/
+
+function createSignedUpForTraining(){
+    let html = "";
 
     for(training of model.listOfAvailableTrainings){
          if(training.linkedId == model.loggedInUser){
@@ -46,15 +62,17 @@ function createActiveTraining(){
     return html;
 }
 
-function createSignedUpForTraining(){
-    let html = "Treninger du er meldt opp til";
+function createListofSignedUpTraining(){
+    let html="";
 
-    for(training of model.listOfAvailableTrainings){
-         if(training.linkedId == model.loggedInUser){
+    let Id = model.signedInId;
+    let trainingIds = model.signedUpforTraining[Id-1].trainingId;
 
-        html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
-        <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div></div>`
-         }
-    };
+    for(let i = 0; i<trainingIds.length;i++){
+     let training = model.listOfAvailableTrainings.filter(training => training.linkedId == trainingIds[i])
+     html +=`<div class="userBox"> Dag:${training[0].date}  Tid:${training[0].time}
+             <div>Treningstype: ${training[0].trainingtype}  Sted: ${training[0].place}</div></div>` 
+    }
+   
     return html;
 }

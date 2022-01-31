@@ -1,5 +1,8 @@
 const model = {
 
+        signedInPerson:"",
+        signedInId:1,
+
         pageSelected:"availableTraining",
 
         loggedInUser:1,
@@ -128,17 +131,23 @@ const model = {
         listOfAvailableTrainings:[
 
             {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:2, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:3, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:4, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:5, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:6, createdBy: "Linn Eidsten", date: "17.11.21", time:"13:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:7, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"tester", place:"LA-rvik" },
+            {linkedId:8, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:9, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"noeannet", place:"LA-rvik" },
+            {linkedId:10, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:11, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
             
+        ],
+
+        signedUpforTraining:[
+            {personId: 1, trainingId: [7,9]},
+
+
         ],
 
 

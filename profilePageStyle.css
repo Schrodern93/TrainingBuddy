@@ -5,46 +5,61 @@
     display: grid;
     
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 3fr 10px 5fr 1fr 5fr ;
+    grid-template-rows: 5fr 1fr 7fr 1fr 7fr;
  
     grid-template-areas:'profilePicture profileInfo'
+                        'trainingHeader trainingHeader'
                         'activeTraining activeTraining'
-                        'scroll1 scroll1'
+                        'trainingHeader2 trainingHeader2'
                         'signedUpTraining signedUpTraining'
-                        'scroll1 scroll1';
+                        ;
 }
-/* må fikse grid oppsett slik at det ikke er bugga på profilside
-    må fikse createSignedUpForTraining() slik at den viser treninger man er meldt opp til
-*/
+
 
 .profilePicture{
     background-color: aquamarine;
     grid-area: profilePicture;
 }
 .profilePicture img{
-    width:  40vw;
+    width:  50vw;
     height: auto;
-    padding: 20px;
+    /* padding: 20px; */
+    margin:5px;
 }
 
 .profileInfo{
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
+    width:50vw;
     background-color: aquamarine;
     grid-area: profileInfo;
+    text-size-adjust: auto;
+    /* margin:5px; */
+    padding: 5px;
 }
 
 .activeTraining{    
-
+    position: relative;
+    width: 100vw;
+    overflow: scroll;
+    /* height: 30vh; */
     grid-area: activeTraining;
 }
 
 .signedUpTraining{
-    padding-top:10px;
-   
+    /* padding-top:10px; */
+    overflow: scroll;
     grid-area: signedUpTraining;
 }
-.scroll1{
-    overflow: scroll;
-    grid-area: scroll1;
+.trainingheader{
+    width: 100vw;
+    height: 2vh;
+    font-size: 25px;
+    grid-area: trainingHeader;
+}
+.trainingheader2{
+    width: 100vw;
+    height: 2vh;
+    font-size: 25px;
+    grid-area: trainingHeader2;
 }
