@@ -1,0 +1,96 @@
+/*------------ menubuttons ---------*/
+.menuContainer{
+    /* padding-top:15%; */
+    margin:0;
+    padding: 0;
+    display: flex;
+    height: 80px;
+    width: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuline1{
+    position: fixed;
+    border-radius: 8%;
+    bottom: 5.4vh;
+    margin: 3px;
+    height: 8px;
+    width: 13vw;
+    right: 5vw;
+    background-color: aliceblue;
+}
+.menuline2{
+    position: fixed;
+    border-radius: 8%;
+    bottom:3.6vh;
+    margin: 3px;
+    height: 8px;
+    width: 13vw;
+    right: 5vw;
+    background-color: aliceblue;
+}
+.menuline3{
+    position: fixed;
+    border-radius: 8%;
+    bottom:1.8vh;
+    margin: 3px;
+    height: 8px;
+    width: 13vw;
+    right: 5vw;
+    background-color: aliceblue;
+}
+
+.active1{
+    /* transform: translate(80px 0px);
+    transition: transform 2s; */
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 0%;
+    bottom: 80px;
+    right: 0px;
+    margin: 0;
+   
+    
+}
+.active2{
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    bottom:80px;
+    right: 80px;
+    border-radius: 0%;
+    margin: 0;
+   
+}
+
+.active3{
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    bottom: 0vh;
+    right: 80px;
+    border-radius: 0%;
+    margin: 0;
+    
+}
+
+.menuButton1{
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+    color: white;
+    font-size: 15vw;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+/* .menuButton1:checked{
+    bottom: 10vh;
+} */

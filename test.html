@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menuStyle.css">
+    <script src="model.js"></script>
+</head>
+<body>
+
+    <div id="app"></div>
+    
+
+    <script>
+        view()
+        function view(){
+            let html = ""
+
+            html = ` <div class="gridcontainer">
+                <div class="header">
+                    <div class="headerText">TRAINING BUDDY</div>
+                </div>
+                <div class="maincontent"></div>
+                
+                <div class="menu">
+                    <div class="menuContainer" onclick="mainView('profilePage')">
+                        <div class="menuline1 ${model.style.btn1}"></div>
+                        <div class="menuline2 ${model.style.btn2}"></div>
+                        <div class="menuline3 ${model.style.btn3}"></div> 
+                        <div class="menuButton1" onclick="activateButtons()">${model.style.btn4}</div>     
+                    </div>
+                   
+                </div>
+                <div class="footer" onclick="mainView('makeTraining')">LAG NY TIME</div>
+            </div>`;
+           
+            document.getElementById("app").innerHTML = html;
+        }
+
+        function activateButtons(){
+              if(model.style.btn1 != ""){
+                model.style.btn1 ="";
+                model.style.btn2 ="";
+                model.style.btn3 ="";
+                model.style.btn4 ="";
+              }  
+              else{
+                  model.style.btn1 ="active1";
+                  model.style.btn2 ="active2";
+                  model.style.btn3 ="active3";
+                  model.style.btn4 ="X";
+                  
+              }
+
+            view();
+        }
+
+
+
+    </script>
+</body>
+</html>

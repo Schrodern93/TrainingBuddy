@@ -31,6 +31,7 @@ div.footer {
     justify-content: center;
     font-size: 25px;
     font-weight: 600;
+    height: 80px;
   background-color:rgb(195, 195, 255);
   grid-area: footer;      /*Her defineres området footeren skal ha i grid templaten*/
     

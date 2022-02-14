@@ -35,32 +35,19 @@ return html;
 
 function createActiveTraining(){
     let html = "";
-
+    let Id = model.signedInId;
+    // let person = model.users.filter(person => person.id == Id)
+    //må fikses for at model og id linkes
     for(training of model.listOfAvailableTrainings){
-         if(training.linkedId == model.loggedInUser){
-
+         if(training.userId == Id){
+            console.log(training);
         html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
         <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div></div>`
          }
     };
     return html;
 }
-/* 
-    må fikse createSignedUpForTraining() slik at den viser treninger man er meldt opp til
-*/
 
-// function createSignedUpForTraining(){
-//     let html = "";
-
-//     for(training of model.listOfAvailableTrainings){
-//          if(training.linkedId == model.loggedInUser){
-
-//         html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
-//         <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div></div>`
-//          }
-//     };
-//     return html;
-// }
 
 function createListofSignedUpTraining(){
     let html="";

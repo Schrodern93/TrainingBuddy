@@ -20,11 +20,12 @@ function makeTraining(){
 function createTrainingObject(){
 let newTraining ="";
 let dateString = model.inputs.date.split("-")
+// let dateString = model.inputs.date;
 console.log(dateString.toString())
-let newDate = new Date(Date.UTC(dateString));
-console.log(newDate)
+// let newDate = new Date(Date.UTC(dateString));
+// console.log(newDate)
 //let CreateDateArray = model.inputs.date.split("-")
-let CreateDateArray = newDate.toLocaleDateString('no-NO');
+let CreateDateArray = model.inputs.date.toLocaleDateString('no-NO');
  //let dateString = newDate.toLocaleDateString();
 // let dateString = CreateDateArray.reverse();
 

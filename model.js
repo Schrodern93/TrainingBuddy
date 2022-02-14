@@ -13,6 +13,7 @@ const model = {
 
 
         },
+        style:{btn1:"", btn2:"", btn3:"", btn4:""},
         filteredValue: "",
         selectedValueInFilter:"Dag",
         footerNumber: 0,
@@ -130,19 +131,19 @@ const model = {
 
         listOfAvailableTrainings:[
 
-            {linkedId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:2, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:3, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:4, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:5, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
-            {linkedId:6, createdBy: "Linn Eidsten", date: "17.11.21", time:"13:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:7, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"tester", place:"LA-rvik" },
-            {linkedId:8, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:9, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"noeannet", place:"LA-rvik" },
-            {linkedId:10, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:11, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
-            {linkedId:12, createdBy: "Bjørnar Johansen", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Chess", place:"TBG" },
-            {linkedId:13, createdBy: "Bjørnar Johansen", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"TrainTheBrain", place:"TBG" },
+            {linkedId:1, userId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:2, userId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:3, userId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:4, userId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:5, userId:1, createdBy: "Joakim Schrøder", date: "16.11.21", time:"12:00 - 13:00",trainingtype:"Styrke", place:"SisSportssenter" },
+            {linkedId:6, userId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"13:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:7, userId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"tester", place:"LA-rvik" },
+            {linkedId:8, userId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:9, userId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"noeannet", place:"LA-rvik" },
+            {linkedId:10, userId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:11, userId:2, createdBy: "Linn Eidsten", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Unknown", place:"LA-rvik" },
+            {linkedId:12, userId:5, createdBy: "Bjørnar Johansen", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"Chess", place:"TBG" },
+            {linkedId:13, userId:5, createdBy: "Bjørnar Johansen", date: "17.11.21", time:"14:00 - 15:30",trainingtype:"TrainTheBrain", place:"TBG" },
             
         ],
 
