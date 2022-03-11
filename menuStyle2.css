@@ -10,7 +10,38 @@
     align-items: center;
     justify-content: center;
 }
-.menuContainer:active{
+
+.menuContainer:hover .menuline1, .menuContainer:active .menuline1{
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 0%;
+    bottom: 80px;
+    right: 0px;
+    margin: 0;
+    background-color: red;
+    transition-duration: 1s;
+}
+.menuContainer:hover .menuline2, .menuContainer:active .menuline2{
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    bottom:80px;
+    right: 80px;
+    border-radius: 0%;
+    margin: 0;
+   background-color: brown;
+   transition-duration: 1s;
+}
+.menuContainer:hover .menuline3, .menuContainer:active .menuline3{
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    bottom: 0vh;
+    right: 80px;
+    border-radius: 0%;
+    margin: 0;
+    background-color: violet;
     transition-duration: 1s;
 }
 
@@ -25,7 +56,7 @@
     background-color: aliceblue;
    
 }
-.menuline1:active{
+/* .menuline1:hover, .menuline1:active{
     position:absolute;
     height: 80px;
     width: 80px;
@@ -34,7 +65,9 @@
     right: 0px;
     margin: 0;
     background-color: red;
-}
+    /* transition-property: ; */
+   /* transition-duration: 1s;
+/*} */
 .menuline2{
     position: fixed;
     border-radius: 8%;
@@ -45,6 +78,18 @@
     right: 5vw;
     background-color: aliceblue;
 }
+/* .menuline2:hover, .menuline2:active{
+    position:absolute;
+    height: 80px;
+    width: 80px;
+    bottom:80px;
+    right: 80px;
+    border-radius: 0%;
+    margin: 0;
+   background-color: brown;
+   transition-duration: 1s;
+} */
+
 .menuline3{
     position: fixed;
     border-radius: 8%;
@@ -55,34 +100,8 @@
     right: 5vw;
     background-color: aliceblue;
 }
- 
-.active1{
-    /* transform: translate(80px 0px);
-    transition: transform 2s; */
-    position:absolute;
-    height: 80px;
-    width: 80px;
-    border-radius: 0%;
-    bottom: 80px;
-    right: 0px;
-    margin: 0;
-    transition-duration: 1s;
-    transition-delay: 1s;
-    background-color: red;
-}
 
-.active2{
-    position:absolute;
-    height: 80px;
-    width: 80px;
-    bottom:80px;
-    right: 80px;
-    border-radius: 0%;
-    margin: 0;
-   background-color: brown;
-}
-
-.active3{
+/* .menuline3:hover, .menuline3:active{
     position:absolute;
     height: 80px;
     width: 80px;
@@ -91,22 +110,29 @@
     border-radius: 0%;
     margin: 0;
     background-color: violet;
-}
+    transition-duration: 1s;
+} */
+
 
 .menuButton1{
     position: fixed;
     display: flex;
     bottom: 0px;
     right: 0px;
-    /* z-index: 10; */
+    z-index: 10;
     width: 80px;
     height: 80px;
-    color: white;
+    color: transparent;
     font-size: 15vw;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+
 }
+
+
+
+
 /* .menuButton1:checked{
     bottom: 10vh;
 } */

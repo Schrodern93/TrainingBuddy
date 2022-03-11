@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menuStyle.css">
+    <link rel="stylesheet" href="menuStyle2.css">
     <script src="model.js"></script>
 </head>
 <body>
@@ -25,14 +25,13 @@
                 </div>
                 <div class="maincontent"></div>
                 
-                <div class="menu">
-                    <div class="menuContainer" onclick="mainView('profilePage')">
-                        <div class="menuline1 ${model.style.btn1}"></div>
-                        <div class="menuline2 ${model.style.btn2}"></div>
-                        <div class="menuline3 ${model.style.btn3}"></div> 
-                        <div class="menuButton1" onclick="activateButtons()">${model.style.btn4}</div>     
-                    </div>
-                   
+                <div class="menu" ontouchstart="">
+                    <div class="menuContainer">
+                        <div class="menuline1"></div>
+                        <div class="menuline2"></div>
+                        <div class="menuline3"></div> 
+                          
+                    </div> 
                 </div>
                 <div class="footer" onclick="mainView('makeTraining')">LAG NY TIME</div>
             </div>`;
@@ -40,22 +39,23 @@
             document.getElementById("app").innerHTML = html;
         }
 
+        // <div class="menuButton1" onclick="activateButtons()">${model.style.btn4}</div>   
         function activateButtons(){
-              if(model.style.btn1 != ""){
-                model.style.btn1 ="";
-                model.style.btn2 ="";
-                model.style.btn3 ="";
-                model.style.btn4 ="";
-              }  
-              else{
-                  model.style.btn1 ="active1";
-                  model.style.btn2 ="active2";
-                  model.style.btn3 ="active3";
-                  model.style.btn4 ="X";
-                  
-              }
 
-            view();
+
+            let current = document.getElementsByClassName("menuButton1");
+            current[0].style.color = "white";
+
+            // console.log("kjører");
+            // let divs = document.getElementsByClassName("line");
+            // for(let i = 0; i<divs.length; i++){
+
+            //     let current = document.getElementsByClassName(`menuline${i+1}`);
+            //     current[0].className +=" active"; 
+            // }
+           
+
+            //  view();
         }
 
 

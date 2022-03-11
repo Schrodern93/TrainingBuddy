@@ -6,6 +6,10 @@ if(model.filteredValue == "Person"){
     html =`<div class="selector">SORTER ETTER: ${makeSelector()} <input class="inputNameFilter" type="text"/></div>
     ${makeListOfAvailableTraining()}`;
 }
+else if(model.filteredValue == "Dag"){
+    html =`<div class="selector">SORTER ETTER: ${makeSelector()} <input class="inputNameFilter" onchange="model.inputs.date = this.value" type="date"/></div>
+    ${makeListOfAvailableTraining()}`;
+}
 else{
 html =`<div class="selector">SORTER ETTER: ${makeSelector()}</div>
 ${makeListOfAvailableTraining()}
@@ -38,7 +42,7 @@ return html;
 function makeSelector(){
 let html = "";
 
-html =`<select onchange="filterTraining(this.value)">
+html =`<select class="selectfrontpage" onchange="filterTraining(this.value)">
         <option ${model.selectedValueInFilter == "Dag" ? "selected":""} value="Dag">Dag</option>
         <option ${model.selectedValueInFilter == "Treningssenter" ? "selected":""} value="Treningssenter">Treningssenter</option>
         <option ${model.selectedValueInFilter == "Person" ? "selected":""} value="Person">Person</option>

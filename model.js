@@ -9,12 +9,12 @@ const model = {
 
         inputs:{
             dateAndTime: "",
-            date:"",
+            date:null,
 
 
         },
-        style:{btn1:"", btn2:"", btn3:"", btn4:""},
-        filteredValue: "",
+        style:{btn1:"", btn2:"", btn3:"", btn4:"X"},
+        filteredValue: "Dag",
         selectedValueInFilter:"Dag",
         footerNumber: 0,
         footer:[`<div class="footer" onclick="mainView('makeTraining')">LAG NY TIME</div>`,

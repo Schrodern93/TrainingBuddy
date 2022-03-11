@@ -116,6 +116,9 @@ div.maincontent {
 .selector{
     padding: 5px;
 }
+.selectfrontpage{
+    height:24px;
+}
 /*----- make training ------ */
 .inputsMakeTraining{
     width:80vw;
@@ -144,5 +147,5 @@ height: 30px;
 }
 
 .inputNameFilter{
-width:30vw;
+height: 18px;
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugFix-Assignment</title>
+</head>
+
+<body>
+    <button onclick="run()">Run</button>
+    <div class="hidden">A</div>
+    <div class="hidden">B</div>
+    <div class="hidden">C</div>
+    <div class="hidden">D</div>
+    <div class="hidden">E</div>
+</body>
+<script>
+    function run() {
+        let elements = document.getElementsByClassName('hidden');
+        let length = elements.length;
+        for(let i = 0; i < length; i++){
+            elements[0].classList.remove('hidden');
+        }
+    }
+</script>
+<style>
+    .hidden {
+        display: none;
+    }
+    
+</style>
+
+</html>
