@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,15 @@
     <link rel="stylesheet" href="menuStyle2.css">
     <script src="model.js"></script>
 </head>
+
 <body>
 
     <div id="app"></div>
-    
+
 
     <script>
         view()
-        function view(){
+        function view() {
             let html = ""
 
             html = ` <div class="gridcontainer">
@@ -26,7 +28,7 @@
                 <div class="maincontent"></div>
                 
                 <div class="menu" ontouchstart="">
-                    <div class="menuContainer">
+                    <div id="menuContainer">
                         <div class="menuline1"></div>
                         <div class="menuline2"></div>
                         <div class="menuline3"></div> 
@@ -35,35 +37,27 @@
                 </div>
                 <div class="footer" onclick="mainView('makeTraining')">LAG NY TIME</div>
             </div>`;
-           
+
             document.getElementById("app").innerHTML = html;
         }
 
-        //   
-        function activateButtons(){
+        //
+        let isActive = false; // model.state.menu active?
+        function activateButtons() {
             let current = document.getElementsByClassName("menuButton1");
-            console.log(current[0].style.color)
-            if(current[0].style.color == "white"){
-                current[0].style.color ="transparent";
-            }
-            else if(current[0].style.color == "transparent"){
-                current[0].style.color ="white";
-            }
-           
-            // console.log("kjører");
-            // let divs = document.getElementsByClassName("line");
-            // for(let i = 0; i<divs.length; i++){
+            isActive = !isActive;
 
-            //     let current = document.getElementsByClassName(`menuline${i+1}`);
-            //     current[0].className +=" active"; 
-            // }
-           
+            if (isActive) current[0].style.color = "white";
 
-            //  view();
+            else {
+                current[0].style.color = "transparent";
+                console.log(document.getElementById("menuContainer"));
+                document.getElementById("menuContainer").children[1].remove();
+                document.getElementById("menuContainer").children[2].remove();
+                document.getElementById("menuContainer").children[0].remove();
+            }
         }
-
-
-
     </script>
 </body>
+
 </html>
