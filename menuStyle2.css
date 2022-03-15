@@ -1,5 +1,5 @@
 /*------------ menubuttons ---------*/
-.menuContainer{
+#menuContainer{
     /* padding-top:15%; */
     margin:0;
     padding: 0;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.menuContainer:hover .menuline1, .menuContainer:active .menuline1{
+#menuContainer:hover .menuline1, #menuContainer:active .menuline1{
     position:absolute;
     height: 80px;
     width: 80px;
@@ -22,7 +22,7 @@
     background-color: red;
     transition-duration: 1s;
 }
-.menuContainer:hover .menuline2, .menuContainer:active .menuline2{
+#menuContainer:hover .menuline2, #menuContainer:active .menuline2{
     position:absolute;
     height: 80px;
     width: 80px;
@@ -33,7 +33,7 @@
    background-color: brown;
    transition-duration: 1s;
 }
-.menuContainer:hover .menuline3, .menuContainer:active .menuline3{
+#menuContainer:hover .menuline3, #menuContainer:active .menuline3{
     position:absolute;
     height: 80px;
     width: 80px;
