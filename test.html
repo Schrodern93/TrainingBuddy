@@ -28,12 +28,12 @@
                 <div class="maincontent"></div>
                 
                 <div class="menu" ontouchstart="">
-                    <div id="menuContainer">
-                        <div class="menuline1"></div>
-                        <div class="menuline2"></div>
-                        <div class="menuline3"></div> 
-                         
+                    <div id="menuContainer"  onclick="inFocus()">
+                        <div id="menuline1" class="menuline1"></div>
+                        <div id="menuline2" class="menuline2"></div>
+                        <div id="menuline3" class="menuline3"></div>   
                     </div> 
+                    <div id="defocus" onclick="inFocus()"></div>
                 </div>
                 <div class="footer" onclick="mainView('makeTraining')">LAG NY TIME</div>
             </div>`;
@@ -41,21 +41,20 @@
             document.getElementById("app").innerHTML = html;
         }
 
-        //
-        let isActive = false; // model.state.menu active?
-        function activateButtons() {
-            let current = document.getElementsByClassName("menuButton1");
-            isActive = !isActive;
-
-            if (isActive) current[0].style.color = "white";
-
-            else {
-                current[0].style.color = "transparent";
-                console.log(document.getElementById("menuContainer"));
-                document.getElementById("menuContainer").children[1].remove();
-                document.getElementById("menuContainer").children[2].remove();
-                document.getElementById("menuContainer").children[0].remove();
+       //fungerer, men liten bug hvis man trykker utenfor menyen 
+        let isActive = true; 
+        
+        function inFocus(){
+            let current = document.getElementById("defocus");
+            if (isActive==true){
+                current.style.zIndex = 10;
+                isActive = false;
             }
+            else{
+                current.style.zIndex = -1;
+                isActive = true;
+            }
+
         }
     </script>
 </body>
