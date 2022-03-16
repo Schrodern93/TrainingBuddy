@@ -34,16 +34,16 @@ let html ="";
                     <div class="headerText">TRAINING BUDDY</div>
                 </div>
                 <div class="maincontent">${createMainContent(selectedPage)}</div>
-                
-                <div class="menu">
-                    <div class="menuContainer" onclick="mainView('profilePage')">
-                        <div class="menuline"></div>
-                        <div class="menuline"></div>
-                        <div class="menuline"></div>      
-                    </div>
-                    <div class="menuButton1"></div>
-                </div>
                 ${footerSelector(model.footerNumber)}
+                <div class="menu" ontouchstart="">
+                    <div id="menuContainer"  onclick="inFocus()">
+                        <div id="menuline1" class="menuline1">&#x1f464</div>
+                        <div id="menuline2" class="menuline2">?</div>
+                        <div id="menuline3" class="menuline3">&#x2699</div>   
+                    </div> 
+                    <div id="defocus" onclick="inFocus()"><div class="cross">&#10006</div></div>
+                </div>
+               
             </div>`;
 
     document.getElementById("app").innerHTML = html;
@@ -52,3 +52,46 @@ let html ="";
 function footerSelector(number){
 return model.footer[number];
 }
+
+let isActive = true; 
+        
+        function inFocus(){
+            let current = document.getElementById("defocus");
+            activateMenuButtons()
+            if (isActive==true){
+                current.style.zIndex = 10;
+                current.style.color = "white";
+                current.style.transitionDelay = 0;
+                current.style.transitionDuration = 0.2;
+                isActive = false;
+            }
+            else{
+                current.style.zIndex = -1;
+                current.style.color = "transparent";
+                current.style.transitionDelay = 0;
+                current.style.transitionDuration = 0.2;
+                isActive = true;
+            }
+        }
+        function activateMenuButtons(){
+            let personButton = document.getElementById("menuline1");
+            let QandAButton = document.getElementById("menuline2");
+            let SettingsButton = document.getElementById("menuline3");
+            if(isActive == true){
+                personButton.style.zIndex = 11;
+                QandAButton.style.zIndex = 11;
+                SettingsButton.style.zIndex = 11;
+                personButton.onclick = function(){alert("person")};
+                QandAButton.onclick = function(){alert("Q and A")};
+                SettingsButton.onclick = function(){alert("Settings")};
+            
+             }
+             else{
+                // personButton.style.zIndex = 11;
+                // QandAButton.style.zIndex = 11;
+                // SettingsButton.style.zIndex = 11;
+                personButton.onclick = "";
+                QandAButton.onclick = "";
+                SettingsButton.onclick =""; 
+             }
+         }

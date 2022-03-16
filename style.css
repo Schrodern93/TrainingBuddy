@@ -69,15 +69,15 @@ div.maincontent {
 }
 
 /*------------ menubuttons ---------*/
-.menuContainer{
+/* .menuContainer{
     padding-top:15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.menuline{
+/* .menuline{
     position: relative;
     border-radius: 8%;
     margin: 3px;
@@ -96,7 +96,7 @@ div.maincontent {
 }
 .menuButton1:checked{
     bottom: 10vh;
-}
+} */
 
 /*---------- mainpage ---------*/
 .userBox{

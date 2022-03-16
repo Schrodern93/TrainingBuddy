@@ -30,10 +30,10 @@
                 <div class="menu" ontouchstart="">
                     <div id="menuContainer"  onclick="inFocus()">
                         <div id="menuline1" class="menuline1">&#x1f464</div>
-                        <div id="menuline2" class="menuline2"></div>
+                        <div id="menuline2" class="menuline2">?</div>
                         <div id="menuline3" class="menuline3">&#x2699</div>   
                     </div> 
-                    <div id="defocus" onclick="inFocus()">&#10006;</div>
+                    <div id="defocus" onclick="inFocus()"><div class="cross">&#10006</div></div>
                 </div>
                 <div class="footer" onclick="mainView('makeTraining')">LAG NY TIME</div>
             </div>`;
@@ -46,6 +46,7 @@
         
         function inFocus(){
             let current = document.getElementById("defocus");
+            activateMenuButtons()
             if (isActive==true){
                 current.style.zIndex = 10;
                 current.style.color = "white";
@@ -60,7 +61,16 @@
                 current.style.transitionDuration = 0.2;
                 isActive = true;
             }
-
+        }
+        function activateMenuButtons(){
+           let personButton = document.getElementById("menuline1");
+           if(isActive == true){
+           person.onclick = function(){alert("hei")};
+           
+            }
+            else{
+                person.onclick = "";
+            }
         }
     </script>
 </body>
