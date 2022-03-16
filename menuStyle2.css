@@ -20,6 +20,9 @@
     right: 0px;
     margin: 0;
     background-color: red;
+    font-size: 60px;
+    justify-content: center;
+    color: white;
     transition-duration: 1s;
 }
 #menuContainer:hover .menuline2, #menuContainer:active .menuline2{
@@ -31,6 +34,9 @@
     border-radius: 0%;
     margin: 0;
    background-color: brown;
+   font-size: 60px;
+    justify-content: center;
+    color: white;
    transition-duration: 1s;
 }
 #menuContainer:hover .menuline3, #menuContainer:active .menuline3{
@@ -42,6 +48,10 @@
     border-radius: 0%;
     margin: 0;
     background-color: violet;
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    color: white;
     transition-duration: 1s;
 }
 
@@ -54,6 +64,9 @@
     width: 13vw;
     right: 5vw;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    color: transparent;
     transition-duration: 1s;
 }
 
@@ -66,6 +79,9 @@
     width: 13vw;
     right: 5vw;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    color: transparent;
     transition-duration: 1s;
 }
 
@@ -78,6 +94,9 @@
     width: 13vw;
     right: 5vw;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    color: transparent;
     transition-duration: 1s;
 }
 
@@ -104,11 +123,11 @@
     width: 80px;
     bottom: 0px;
     right: 0px;
-z-index: -1;
+    z-index: -1;
+    font-size: 60px;
+    justify-content: center;
+    color: white;
+    transition-delay: .2s;
+    transition-duration: .2s;
 }
 
-
-
-/* .menuButton1:checked{
-    bottom: 10vh;
-} */
