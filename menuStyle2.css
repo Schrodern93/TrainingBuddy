@@ -24,6 +24,7 @@
     justify-content: center;
     color: white;
     transition-duration: 1s;
+    user-select: none;
 }
 #menuContainer:hover .menuline2, #menuContainer:active .menuline2{
     position:absolute;
@@ -38,6 +39,7 @@
     justify-content: center;
     color: white;
    transition-duration: 1s;
+   user-select: none;
 }
 #menuContainer:hover .menuline3, #menuContainer:active .menuline3{
     position:absolute;
@@ -53,6 +55,7 @@
     justify-content: center;
     color: white;
     transition-duration: 1s;
+    user-select: none;
 }
 
 .menuline1{
@@ -68,6 +71,7 @@
     justify-content: center;
     color: transparent;
     transition-duration: 1s;
+    user-select: none;
 }
 
 .menuline2{
@@ -83,6 +87,7 @@
     justify-content: center;
     color: transparent;
     transition-duration: 1s;
+    user-select: none;
 }
 
 .menuline3{
@@ -98,6 +103,7 @@
     justify-content: center;
     color: transparent;
     transition-duration: 1s;
+    user-select: none;
 }
 
 .menuButton1{
@@ -118,22 +124,16 @@
 
 #defocus{
     position: absolute;
-    /* display: flex; */
-    /* height: 80px;
-    width: 80px; */
     height: 100vh;
     width: 100vw;
     bottom: 0px;
     right: 0px;
     z-index: -1;
     font-size: 60px;
-   
-    /* justify-content:baseline; */
-    /* justify-items: end;
-    align-items:flex-end; */
+    user-select: none;
     color: white;
     background-color: black;
-    opacity: 30%;
+    opacity: 50%;
     transition-delay: .2s;
     transition-duration: .2s;
 }
@@ -143,6 +143,6 @@
     right: 15px;
     z-index: 11;
     color: white;
-    opacity: unset;
+    opacity: revert;
 }
 

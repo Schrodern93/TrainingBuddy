@@ -15,6 +15,14 @@ function viewSelector(selectedPage){
         html = profilePageView();
         model.footerNumber = 1
     }
+    if(model.pageSelected == "QandAPage"){
+        html = QandAPageView();
+        model.footerNumber = 1
+    }
+    if(model.pageSelected == "settingsPage"){
+        html = settingsPageView();
+        model.footerNumber = 1
+    }
     return html;
 }
 function createMainContent(selectedPage){
@@ -81,9 +89,9 @@ let isActive = true;
                 personButton.style.zIndex = 11;
                 QandAButton.style.zIndex = 11;
                 SettingsButton.style.zIndex = 11;
-                personButton.onclick = function(){alert("person")};
-                QandAButton.onclick = function(){alert("Q and A")};
-                SettingsButton.onclick = function(){alert("Settings")};
+                personButton.onclick = function(){mainView("profilePage")};
+                QandAButton.onclick = function(){mainView("QandAPage")};
+                SettingsButton.onclick = function(){mainView("settingsPage")};
             
              }
              else{
