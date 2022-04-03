@@ -23,7 +23,7 @@ return html;
 }
 
 function makeListOfAvailableTraining(){
-let html = "";
+let html = "<div class='trainingContainer'>";
 let printedList=[]; 
    
     for(training of model.listOfAvailableTrainings){
@@ -33,7 +33,8 @@ let printedList=[];
         <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div> <div class="nameplateUserBox">Laget av: ${training.createdBy}</div></div>`
 
     }
-
+    html+="<div></div>`" // for at den siste skal vises, hvordan kan man løse denne ? 
+    html+="</div>"
 
 return html;
 

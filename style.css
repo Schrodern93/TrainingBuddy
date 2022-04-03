@@ -50,8 +50,9 @@ div.header {
 div.maincontent {
   background-color:rgb(167, 255, 167);
   grid-area: innhold;
-  overflow: scroll;
+  overflow: hidden;
 }
+
 
 .maincontent::-webkit-scrollbar {
     display: none;
@@ -100,6 +101,13 @@ div.maincontent {
 } */
 
 /*---------- mainpage ---------*/
+
+.trainingContainer{
+    position: relative;
+    height: 100%;
+    overflow: scroll; 
+    /* padding-bottom: 150px; */
+}
 .userBox{
     width: 100vw;
     height: 8vh;
