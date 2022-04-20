@@ -3,7 +3,7 @@ function availableTrainingView(){
 let html = "";
 
 if(model.filteredValue == "Person"){
-    html =`<div class="selector">SORTER ETTER: ${makeSelector()} <input class="inputNameFilter" type="text"/></div>
+    html =`<div class="selector">SORTER ETTER: ${makeSelector()} <input class="inputNameFilter" onchange="model.inputs.frontpage.filtervalue = this.value; mainView('availableTraining');  " type="text"/></div>
     ${makeListOfAvailableTraining()}`;
 }
 else if(model.filteredValue == "Dag"){
@@ -25,7 +25,18 @@ return html;
 function makeListOfAvailableTraining(){
 let html = "<div class='trainingContainer'>";
 let printedList=[]; 
-   
+if(model.inputs.frontpage.filtervalue != ""){
+    printedList =  filtrering(model.filteredValue)
+    for(training of printedList){
+        // if(training.date == model.)
+
+        html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
+        <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div> <div class="nameplateUserBox">Laget av: ${training.createdBy}</div></div>`
+
+    }
+}
+
+else{
     for(training of model.listOfAvailableTrainings){
         // if(training.date == model.)
 
@@ -33,7 +44,8 @@ let printedList=[];
         <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div> <div class="nameplateUserBox">Laget av: ${training.createdBy}</div></div>`
 
     }
-    html+="<div></div>`" // for at den siste skal vises, hvordan kan man løse denne ? 
+}
+    html+="<div class='spacer'></div>" // for at den siste skal vises, hvordan kan man løse denne ? 
     html+="</div>"
 
 return html;

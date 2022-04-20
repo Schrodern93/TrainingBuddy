@@ -42,7 +42,9 @@ function createActiveTraining(){
          if(training.userId == Id){
             console.log(training);
         html += `<div class="userBox"> Dag:${training.date}  Tid:${training.time}
-        <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div></div>`
+        <div>Treningstype: ${training.trainingtype}  Sted: ${training.place}</div>
+        <div> Laget av: ${training.createdBy}</div>
+        </div>`
          }
     };
     return html;

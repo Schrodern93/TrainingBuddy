@@ -1,9 +1,9 @@
 .profilePageContainer{
-    overflow: hidden;
+    
     height: 100vh;
     width: 100vw;
     display: grid;
-    
+    /* overflow: scroll; */
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 5fr 1fr 7fr 1fr 7fr;
  

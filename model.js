@@ -11,8 +11,12 @@ const model = {
             dateAndTime: "",
             date:null,
 
+            frontpage:{
+                filtervalue:"",
+            }
 
         },
+        
         style:{btn1:"", btn2:"", btn3:"", btn4:"X"},
         filteredValue: "Dag",
         selectedValueInFilter:"Dag",
